@@ -496,9 +496,10 @@
     #define DEFAULT_Ki_LIST {   1.08,   1.0 }
     #define DEFAULT_Kd_LIST { 114.00, 112.0 }
   #else
-    #define DEFAULT_Kp 21.73
-    #define DEFAULT_Ki 1.54
-    #define DEFAULT_Kd 76.55
+    // Creality Ender-5 (From PID Tuning)
+    #define DEFAULT_Kp 23.75
+    #define DEFAULT_Ki 2.02
+    #define DEFAULT_Kd 69.97
   #endif
 
 #endif // PIDTEMP
@@ -744,7 +745,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 800, 93 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 800, 95.7 /* Calibrated */ }
 
 /**
  * Default Max Feed Rate (mm/s)
